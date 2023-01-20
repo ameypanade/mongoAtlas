@@ -1,0 +1,419 @@
+{
+    "field_name": "quoteSearch",
+    "function_name": "quoteSearch",
+    "input_type": {
+        "properties": {
+            "_id": {
+                "bsonType": "string"
+            },
+            "agentId": {
+                "bsonType": "string"
+            },
+            "contactId": {
+                "bsonType": "string"
+            },
+            "contactNumber": {
+                "bsonType": "string"
+            },
+            "externalPolicyNr": {
+                "bsonType": "string"
+            },
+            "externalProposalNr": {
+                "bsonType": "string"
+            },
+            "policyHeaderId": {
+                "bsonType": "string"
+            },
+            "policyHeaderNumber": {
+                "bsonType": "string"
+            },
+            "policyId": {
+                "bsonType": "string"
+            },
+            "policyNumber": {
+                "bsonType": "string"
+            },
+            "proposalNumber": {
+                "bsonType": "string"
+            },
+            "quoteId": {
+                "bsonType": "string"
+            },
+            "quoteNumber": {
+                "bsonType": "string"
+            }
+        },
+        "title": "quoteSearchInput",
+        "type": "object"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": {
+        "items": [
+            {
+                "properties": {
+                    "AUD_SRC_SYS_ID": {
+                        "bsonType": "string"
+                    },
+                    "AUD_SRC_SYS_NM": {
+                        "bsonType": "string"
+                    },
+                    "_id": {
+                        "bsonType": "string"
+                    },
+                    "contact": {
+                        "properties": {
+                            "AUD_SRC_SYS_ID": {
+                                "bsonType": "string"
+                            },
+                            "AUD_SRC_SYS_NM": {
+                                "bsonType": "string"
+                            },
+                            "CE_ID": {
+                                "bsonType": "string"
+                            },
+                            "MQ_ID": {
+                                "bsonType": "string"
+                            },
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "addresses": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "addressType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "city": {
+                                            "bsonType": "string"
+                                        },
+                                        "country": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "house": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        },
+                                        "postalCode": {
+                                            "bsonType": "string"
+                                        },
+                                        "street": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "age": {
+                                "bsonType": "int"
+                            },
+                            "bankAccounts": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "accountNumberLastDigits": {
+                                            "bsonType": "string"
+                                        },
+                                        "bankName": {
+                                            "bsonType": "string"
+                                        },
+                                        "branchName": {
+                                            "bsonType": "string"
+                                        },
+                                        "country": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "birthCountry": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "contactId": {
+                                "bsonType": "string"
+                            },
+                            "contactNumber": {
+                                "bsonType": "string"
+                            },
+                            "dateOfBirth": {
+                                "bsonType": "string"
+                            },
+                            "education": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "emails": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "email": {
+                                            "bsonType": "string"
+                                        },
+                                        "emailType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        }
+                                    }
+                                }
+                            },
+                            "firstName": {
+                                "bsonType": "string"
+                            },
+                            "fullName": {
+                                "bsonType": "string"
+                            },
+                            "gender": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "language": {
+                                "bsonType": "string"
+                            },
+                            "lastName": {
+                                "bsonType": "string"
+                            },
+                            "maritalStatus": {
+                                "bsonType": "string"
+                            },
+                            "middleName": {
+                                "bsonType": "string"
+                            },
+                            "nationality": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "numberOfFamilyMembers": {
+                                "bsonType": "string"
+                            },
+                            "preferredContactMethod": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "profession": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "telephoneNumbers": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "countryDialCode": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "id": {
+                                            "bsonType": "string"
+                                        },
+                                        "telephoneNumber": {
+                                            "bsonType": "string"
+                                        },
+                                        "telephoneType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "title": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "coverage": {
+                        "bsonType": "string"
+                    },
+                    "creationDate": {
+                        "bsonType": "string"
+                    },
+                    "endDate": {
+                        "bsonType": "string"
+                    },
+                    "policyHolder": {
+                        "bsonType": "object",
+                        "properties": {
+                            "contactId": {
+                                "bsonType": "string"
+                            },
+                            "contactNumber": {
+                                "bsonType": "string"
+                            },
+                            "firstName": {
+                                "bsonType": "string"
+                            },
+                            "lastName": {
+                                "bsonType": "string"
+                            },
+                            "middleName": {
+                                "bsonType": "string"
+                            },
+                            "policyHolderName": {
+                                "bsonType": "string"
+                            },
+                            "title": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "product": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "id": {
+                                "bsonType": "string"
+                            },
+                            "startDate": {
+                                "bsonType": "string"
+                            }
+                        }
+                    },
+                    "proposalNumber": {
+                        "bsonType": "string"
+                    },
+                    "quoteId": {
+                        "bsonType": "string"
+                    },
+                    "quoteNumber": {
+                        "bsonType": "string"
+                    },
+                    "reason": {
+                        "bsonType": "string"
+                    },
+                    "status": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "id": {
+                                "bsonType": "int"
+                            }
+                        }
+                    },
+                    "totalPremium": {
+                        "bsonType": "string"
+                    },
+                    "validTillDate": {
+                        "bsonType": "string"
+                    }
+                },
+                "type": "object"
+            }
+        ],
+        "title": "quoteSearchOutput",
+        "type": "array"
+    },
+    "payload_type_format": "custom"
+}

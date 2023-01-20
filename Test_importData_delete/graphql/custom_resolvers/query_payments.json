@@ -1,0 +1,369 @@
+{
+    "field_name": "payments",
+    "function_name": "payments",
+    "input_type": {
+        "bsonType": "object",
+        "properties": {
+            "contactId": {
+                "bsonType": "string"
+            },
+            "contactNumber": {
+                "bsonType": "string"
+            },
+            "paymentType": {
+                "bsonType": "string"
+            }
+        },
+        "title": "paymentsInput"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": {
+        "items": [
+            {
+                "properties": {
+                    "contacts": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "activeClaimsCount": {
+                                    "bsonType": "int"
+                                },
+                                "activePolicyCount": {
+                                    "bsonType": "int"
+                                },
+                                "age": {
+                                    "bsonType": "string"
+                                },
+                                "contactAddress": {
+                                    "bsonType": "array",
+                                    "items": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "addressLine1": {
+                                                "bsonType": "string"
+                                            },
+                                            "addressLine2": {
+                                                "bsonType": "string"
+                                            },
+                                            "city": {
+                                                "bsonType": "string"
+                                            },
+                                            "state": {
+                                                "bsonType": "string"
+                                            },
+                                            "zipCode": {
+                                                "bsonType": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "contactId": {
+                                    "bsonType": "string"
+                                },
+                                "contactName": {
+                                    "bsonType": "string"
+                                },
+                                "contactNumber": {
+                                    "bsonType": "string"
+                                },
+                                "contactStatus": {
+                                    "bsonType": "string"
+                                },
+                                "dateOfBirth": {
+                                    "bsonType": "string"
+                                },
+                                "email": {
+                                    "bsonType": "string"
+                                },
+                                "firstName": {
+                                    "bsonType": "string"
+                                },
+                                "gender": {
+                                    "bsonType": "string"
+                                },
+                                "language": {
+                                    "bsonType": "string"
+                                },
+                                "lastName": {
+                                    "bsonType": "string"
+                                },
+                                "maritalStatus": {
+                                    "bsonType": "string"
+                                },
+                                "middleName": {
+                                    "bsonType": "string"
+                                },
+                                "nextBestProduct": {
+                                    "bsonType": "string"
+                                },
+                                "probabilitySaleNextBestProduct": {
+                                    "bsonType": "string"
+                                },
+                                "telephoneNumber": {
+                                    "bsonType": "string"
+                                },
+                                "toatalClaimedAmount": {
+                                    "bsonType": "string"
+                                },
+                                "totalClaimsCount": {
+                                    "bsonType": "int"
+                                },
+                                "totalPolicyCount": {
+                                    "bsonType": "int"
+                                },
+                                "totalPremium": {
+                                    "bsonType": "string"
+                                }
+                            }
+                        }
+                    },
+                    "policies": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "_id": {
+                                    "bsonType": "string"
+                                },
+                                "agentId": {
+                                    "bsonType": "string"
+                                },
+                                "assetDetails": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "assetDescription": {
+                                            "bsonType": "string"
+                                        },
+                                        "plateNumber": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                },
+                                "externalPolicyNr": {
+                                    "bsonType": "string"
+                                },
+                                "externalProposalNr": {
+                                    "bsonType": "string"
+                                },
+                                "lobDescription": {
+                                    "bsonType": "string"
+                                },
+                                "lobId": {
+                                    "bsonType": "string"
+                                },
+                                "paymentScheduler": {
+                                    "bsonType": "array",
+                                    "items": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "amount": {
+                                                "bsonType": "string"
+                                            },
+                                            "billingType": {
+                                                "bsonType": "string"
+                                            },
+                                            "collectionDate": {
+                                                "bsonType": "string"
+                                            },
+                                            "collectionMethod": {
+                                                "bsonType": "string"
+                                            },
+                                            "dueDate": {
+                                                "bsonType": "string"
+                                            },
+                                            "invoiceNumber": {
+                                                "bsonType": "string"
+                                            },
+                                            "outstandingBalance": {
+                                                "bsonType": "string"
+                                            },
+                                            "paymentAmount": {
+                                                "bsonType": "string"
+                                            },
+                                            "status": {
+                                                "bsonType": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "policyEndDate": {
+                                    "bsonType": "string"
+                                },
+                                "policyHeaderId": {
+                                    "bsonType": "string"
+                                },
+                                "policyHeaderNumber": {
+                                    "bsonType": "int"
+                                },
+                                "policyHolderName": {
+                                    "bsonType": "string"
+                                },
+                                "policyId": {
+                                    "bsonType": "string"
+                                },
+                                "policyNumber": {
+                                    "bsonType": "string"
+                                },
+                                "policyStartDate": {
+                                    "bsonType": "string"
+                                },
+                                "policyStatus": {
+                                    "bsonType": "string"
+                                },
+                                "product": {
+                                    "bsonType": "string"
+                                },
+                                "risk": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "home": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "address": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "city": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "country": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "house": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "street": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "endDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "startDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "totalPremium": {
+                                                        "bsonType": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "motor": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "address": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "city": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "country": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "house": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "street": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "driver": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "endDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "licensePlate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "model": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "startDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "totalPremium": {
+                                                        "bsonType": "string"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "travel": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "address": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "city": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "country": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "house": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "postalCode": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "street": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "endDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "startDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "totalPremium": {
+                                                        "bsonType": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "totalPremium": {
+                                    "bsonType": "int"
+                                },
+                                "yearlyPremium": {
+                                    "bsonType": "int"
+                                }
+                            }
+                        }
+                    }
+                },
+                "type": "object"
+            }
+        ],
+        "title": "paymentsAPI",
+        "type": "array"
+    },
+    "payload_type_format": "custom"
+}

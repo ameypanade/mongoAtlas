@@ -1,0 +1,20 @@
+{
+    "field_name": "suggestions",
+    "function_name": "suggestion",
+    "input_type": {
+        "bsonType": "object",
+        "properties": {
+            "agentId": {
+                "bsonType": "string"
+            },
+            "inputString": {
+                "bsonType": "string"
+            }
+        },
+        "title": "suggestionInput"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": "string",
+    "payload_type_format": "scalar-list"
+}

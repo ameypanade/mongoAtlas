@@ -1,0 +1,62 @@
+[
+    {
+        "name": "search_V2",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "Customer360_Overview",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "policySearchCustomerId",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "claimSearch",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "customer360",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "search",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "suggestion_V2",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "customerDashboard",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "policySearch",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "quoteSearch",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "suggestion",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "payments",
+        "private": false,
+        "disable_arg_logs": true
+    }
+]

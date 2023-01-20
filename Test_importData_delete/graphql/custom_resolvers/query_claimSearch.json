@@ -1,0 +1,2174 @@
+{
+    "field_name": "claimSearch",
+    "function_name": "claimSearch",
+    "input_type": {
+        "properties": {
+            "_id": {
+                "bsonType": "string"
+            },
+            "agentId": {
+                "bsonType": "string"
+            },
+            "claimId": {
+                "bsonType": "string"
+            },
+            "claimNumber": {
+                "bsonType": "string"
+            },
+            "contactId": {
+                "bsonType": "string"
+            },
+            "contactNumber": {
+                "bsonType": "string"
+            },
+            "policyId": {
+                "bsonType": "string"
+            }
+        },
+        "title": "claimInput",
+        "type": "object"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": {
+        "items": [
+            {
+                "properties": {
+                    "AUD_SRC_SYS_ID": {
+                        "bsonType": "string"
+                    },
+                    "AUD_SRC_SYS_NM": {
+                        "bsonType": "string"
+                    },
+                    "_id": {
+                        "bsonType": "string"
+                    },
+                    "agentId": {
+                        "bsonType": "string"
+                    },
+                    "amountClaimed": {
+                        "bsonType": "string"
+                    },
+                    "amountPayable": {
+                        "bsonType": "string"
+                    },
+                    "assetDetails": {
+                        "bsonType": "string"
+                    },
+                    "causeOfLoss": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "id": {
+                                "bsonType": "int"
+                            }
+                        }
+                    },
+                    "claimEventDescription": {
+                        "bsonType": "string"
+                    },
+                    "claimId": {
+                        "bsonType": "string"
+                    },
+                    "claimNumber": {
+                        "bsonType": "string"
+                    },
+                    "claimStatusType": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "id": {
+                                "bsonType": "int"
+                            }
+                        }
+                    },
+                    "claimant": {
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "claimContactRole": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "description": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        }
+                                    }
+                                },
+                                "claimantAsset": {
+                                    "assetId": {
+                                        "bsonType": "int"
+                                    },
+                                    "bsonType": "object",
+                                    "claimantAssetStatus": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "claimantAssetStatusReason": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "damages": {
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "damageCode": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "damageStatus": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "exGratia": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                },
+                                                "malusStateReason": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "waiveMalus": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "type": "array"
+                                    }
+                                },
+                                "claimantDetails": {
+                                    "bsonType": "object",
+                                    "claimantLiability": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "claimantSide": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "claimantStatusReason": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    }
+                                },
+                                "contactNumber": {
+                                    "bsonType": "string"
+                                },
+                                "damagedObjectAgenda": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "agendaStepDueDate": {
+                                            "bsonType": "string"
+                                        },
+                                        "agendaStepGroup": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "agendaStepStatus": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "agendaStepStatusDate": {
+                                            "bsonType": "string"
+                                        },
+                                        "entityId": {
+                                            "bsonType": "string"
+                                        },
+                                        "entityNumber": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "type": "array"
+                    },
+                    "contact": {
+                        "properties": {
+                            "AUD_SRC_SYS_ID": {
+                                "bsonType": "string"
+                            },
+                            "AUD_SRC_SYS_NM": {
+                                "bsonType": "string"
+                            },
+                            "CE_ID": {
+                                "bsonType": "string"
+                            },
+                            "MQ_ID": {
+                                "bsonType": "string"
+                            },
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "addresses": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "addressType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "city": {
+                                            "bsonType": "string"
+                                        },
+                                        "country": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "house": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        },
+                                        "postalCode": {
+                                            "bsonType": "string"
+                                        },
+                                        "street": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "age": {
+                                "bsonType": "int"
+                            },
+                            "bankAccounts": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "accountNumberLastDigits": {
+                                            "bsonType": "string"
+                                        },
+                                        "bankName": {
+                                            "bsonType": "string"
+                                        },
+                                        "branchName": {
+                                            "bsonType": "string"
+                                        },
+                                        "country": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "birthCountry": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "contactId": {
+                                "bsonType": "string"
+                            },
+                            "contactNumber": {
+                                "bsonType": "string"
+                            },
+                            "dateOfBirth": {
+                                "bsonType": "string"
+                            },
+                            "education": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "emails": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "email": {
+                                            "bsonType": "string"
+                                        },
+                                        "emailType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        }
+                                    }
+                                }
+                            },
+                            "firstName": {
+                                "bsonType": "string"
+                            },
+                            "fullName": {
+                                "bsonType": "string"
+                            },
+                            "gender": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "language": {
+                                "bsonType": "string"
+                            },
+                            "lastName": {
+                                "bsonType": "string"
+                            },
+                            "maritalStatus": {
+                                "bsonType": "string"
+                            },
+                            "middleName": {
+                                "bsonType": "string"
+                            },
+                            "nationality": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "preferredContactMethod": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "profession": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "telephoneNumbers": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "countryDialCode": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "id": {
+                                            "bsonType": "string"
+                                        },
+                                        "telephoneNumber": {
+                                            "bsonType": "string"
+                                        },
+                                        "telephoneType": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "title": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "createDate": {
+                        "bsonType": "string"
+                    },
+                    "currency": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "string"
+                            },
+                            "id": {
+                                "bsonType": "int"
+                            }
+                        }
+                    },
+                    "documents": {
+                        "bsonType": "object",
+                        "properties": {
+                            "documentPreview": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "blobId": {
+                                            "bsonType": "int"
+                                        },
+                                        "fileName": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "listOfDocument": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "catalogName": {
+                                            "bsonType": "string"
+                                        },
+                                        "fileClassification": {
+                                            "bsonType": "string"
+                                        },
+                                        "fileCreationDate": {
+                                            "bsonType": "string"
+                                        },
+                                        "fileName": {
+                                            "bsonType": "string"
+                                        },
+                                        "fileSize": {
+                                            "bsonType": "int"
+                                        },
+                                        "fileType": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "eventDate": {
+                        "bsonType": "string"
+                    },
+                    "eventLocation": {
+                        "bsonType": "object",
+                        "properties": {
+                            "addresses": {
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "city": {
+                                            "bsonType": "string"
+                                        },
+                                        "country": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        },
+                                        "houseNumber": {
+                                            "bsonType": "string"
+                                        },
+                                        "streetName": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                },
+                                "type": "array"
+                            },
+                            "claimLocationType": {
+                                "bsonType": "int"
+                            },
+                            "claimLocationTypeVO": {
+                                "bsonType": "string"
+                            },
+                            "country": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "eventTime": {
+                        "bsonType": "string"
+                    },
+                    "expiryDate": {
+                        "bsonType": "string"
+                    },
+                    "informant": {
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "claimContactRole": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "description": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "int"
+                                        }
+                                    }
+                                },
+                                "contactNumber": {
+                                    "bsonType": "string"
+                                }
+                            }
+                        },
+                        "type": "array"
+                    },
+                    "isPoliceIntervention": {
+                        "bsonType": "bool"
+                    },
+                    "notificationDate": {
+                        "bsonType": "string"
+                    },
+                    "paymentDate": {
+                        "bsonType": "string"
+                    },
+                    "policy": {
+                        "properties": {
+                            "AUD_SRC_SYS_ID": {
+                                "bsonType": "string"
+                            },
+                            "AUD_SRC_SYS_NM": {
+                                "bsonType": "string"
+                            },
+                            "MQ_ID": {
+                                "bsonType": "string"
+                            },
+                            "_id": {
+                                "bsonType": "string"
+                            },
+                            "activePolicyId": {
+                                "bsonType": "int"
+                            },
+                            "billingType": {
+                                "bsonType": "string"
+                            },
+                            "claims": {
+                                "items": [
+                                    {
+                                        "properties": {
+                                            "AUD_SRC_SYS_ID": {
+                                                "type": "string"
+                                            },
+                                            "AUD_SRC_SYS_NM": {
+                                                "type": "string"
+                                            },
+                                            "MQ_ID": {
+                                                "type": "string"
+                                            },
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "causeOfLoss": {
+                                                "properties": {
+                                                    "description": {
+                                                        "type": "string"
+                                                    },
+                                                    "id": {
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "claimEventDescription": {
+                                                "type": "string"
+                                            },
+                                            "claimId": {
+                                                "type": "string"
+                                            },
+                                            "claimNumber": {
+                                                "type": "string"
+                                            },
+                                            "claimStatusType": {
+                                                "properties": {
+                                                    "description": {
+                                                        "type": "string"
+                                                    },
+                                                    "id": {
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "claimant": {
+                                                "items": [
+                                                    {
+                                                        "properties": {
+                                                            "claimContactRole": {
+                                                                "properties": {
+                                                                    "description": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "id": {
+                                                                        "type": "integer"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "claimantDetails": {
+                                                                "properties": {
+                                                                    "claimantAsset": {
+                                                                        "properties": {
+                                                                            "assetId": {
+                                                                                "type": "integer"
+                                                                            },
+                                                                            "claimantAssetStatus": {
+                                                                                "properties": {
+                                                                                    "description": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "id": {
+                                                                                        "type": "integer"
+                                                                                    }
+                                                                                },
+                                                                                "type": "object"
+                                                                            },
+                                                                            "claimantAssetStatusReason": {
+                                                                                "properties": {
+                                                                                    "description": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "id": {
+                                                                                        "type": "integer"
+                                                                                    }
+                                                                                },
+                                                                                "type": "object"
+                                                                            },
+                                                                            "damagedObjectAgenda": {
+                                                                                "items": [
+                                                                                    {
+                                                                                        "properties": {
+                                                                                            "agendaStepDueDate": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "agendaStepGroup": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "agendaStepStatus": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "agendaStepStatusDate": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "entityId": {
+                                                                                                "type": "integer"
+                                                                                            },
+                                                                                            "entityNumber": {
+                                                                                                "type": "integer"
+                                                                                            },
+                                                                                            "id": {
+                                                                                                "type": "integer"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "object"
+                                                                                    }
+                                                                                ],
+                                                                                "type": "array"
+                                                                            },
+                                                                            "damages": {
+                                                                                "items": [
+                                                                                    {
+                                                                                        "properties": {
+                                                                                            "damageCode": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "damageStatus": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "exGratia": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "id": {
+                                                                                                "type": "integer"
+                                                                                            },
+                                                                                            "malusStateReason": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            },
+                                                                                            "waiveMalus": {
+                                                                                                "properties": {
+                                                                                                    "description": {
+                                                                                                        "type": "string"
+                                                                                                    },
+                                                                                                    "id": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                },
+                                                                                                "type": "object"
+                                                                                            }
+                                                                                        },
+                                                                                        "type": "object"
+                                                                                    }
+                                                                                ],
+                                                                                "type": "array"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "claimantLiability": {
+                                                                        "properties": {
+                                                                            "description": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "integer"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "claimantSide": {
+                                                                        "properties": {
+                                                                            "description": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "integer"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    },
+                                                                    "claimantStatusReason": {
+                                                                        "properties": {
+                                                                            "description": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "integer"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "contactNumber": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                ],
+                                                "type": "array"
+                                            },
+                                            "createDate": {
+                                                "type": "string"
+                                            },
+                                            "currency": {
+                                                "properties": {
+                                                    "description": {
+                                                        "type": "string"
+                                                    },
+                                                    "id": {
+                                                        "type": "integer"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "eventDate": {
+                                                "type": "string"
+                                            },
+                                            "eventLocation": {
+                                                "properties": {
+                                                    "address": {
+                                                        "properties": {
+                                                            "city": {
+                                                                "type": "string"
+                                                            },
+                                                            "country": {
+                                                                "properties": {
+                                                                    "email": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "id": {
+                                                                        "type": "integer"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "houseNumber": {
+                                                                "type": "string"
+                                                            },
+                                                            "streetName": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "claimLocationType": {
+                                                        "type": "integer"
+                                                    },
+                                                    "country": {
+                                                        "properties": {
+                                                            "description": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "integer"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "eventTime": {
+                                                "type": "string"
+                                            },
+                                            "informant": {
+                                                "items": [
+                                                    {
+                                                        "properties": {
+                                                            "claimContactRole": {
+                                                                "properties": {
+                                                                    "description": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "id": {
+                                                                        "type": "integer"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            },
+                                                            "contactNumber": {
+                                                                "type": "string"
+                                                            },
+                                                            "informantDetails": {
+                                                                "properties": {
+                                                                    "informantType": {
+                                                                        "properties": {
+                                                                            "description": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "integer"
+                                                                            }
+                                                                        },
+                                                                        "type": "object"
+                                                                    }
+                                                                },
+                                                                "type": "object"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    }
+                                                ],
+                                                "type": "array"
+                                            },
+                                            "isPoliceIntervention": {
+                                                "type": "boolean"
+                                            },
+                                            "notificationDate": {
+                                                "type": "string"
+                                            },
+                                            "policyHolder": {
+                                                "properties": {
+                                                    "claimContactRole": {
+                                                        "properties": {
+                                                            "description": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "integer"
+                                                            }
+                                                        },
+                                                        "type": "object"
+                                                    },
+                                                    "contactId": {
+                                                        "type": "string"
+                                                    },
+                                                    "contactNumber": {
+                                                        "type": "string"
+                                                    },
+                                                    "insuredName": {
+                                                        "type": "string"
+                                                    },
+                                                    "policyHolderName": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "policyList": {
+                                                "properties": {
+                                                    "description": {
+                                                        "type": "boolean"
+                                                    },
+                                                    "id": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            },
+                                            "policyNumber": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ],
+                                "type": "array"
+                            },
+                            "contact": {
+                                "properties": {
+                                    "AUD_SRC_SYS_ID": {
+                                        "bsonType": "string"
+                                    },
+                                    "AUD_SRC_SYS_NM": {
+                                        "bsonType": "string"
+                                    },
+                                    "CE_ID": {
+                                        "bsonType": "string"
+                                    },
+                                    "MQ_ID": {
+                                        "bsonType": "string"
+                                    },
+                                    "_id": {
+                                        "bsonType": "string"
+                                    },
+                                    "addresses": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "addressType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "city": {
+                                                    "bsonType": "string"
+                                                },
+                                                "country": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "house": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                },
+                                                "postalCode": {
+                                                    "bsonType": "string"
+                                                },
+                                                "street": {
+                                                    "bsonType": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "age": {
+                                        "bsonType": "int"
+                                    },
+                                    "bankAccounts": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "accountNumberLastDigits": {
+                                                    "bsonType": "string"
+                                                },
+                                                "bankName": {
+                                                    "bsonType": "string"
+                                                },
+                                                "branchName": {
+                                                    "bsonType": "string"
+                                                },
+                                                "country": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "birthCountry": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "contactId": {
+                                        "bsonType": "string"
+                                    },
+                                    "contactNumber": {
+                                        "bsonType": "string"
+                                    },
+                                    "dateOfBirth": {
+                                        "bsonType": "string"
+                                    },
+                                    "education": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "emails": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "bsonType": "string"
+                                                },
+                                                "emailType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "email": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "firstName": {
+                                        "bsonType": "string"
+                                    },
+                                    "fullName": {
+                                        "bsonType": "string"
+                                    },
+                                    "gender": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "language": {
+                                        "bsonType": "string"
+                                    },
+                                    "lastName": {
+                                        "bsonType": "string"
+                                    },
+                                    "maritalStatus": {
+                                        "bsonType": "string"
+                                    },
+                                    "middleName": {
+                                        "bsonType": "string"
+                                    },
+                                    "nationality": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "preferredContactMethod": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "profession": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "telephoneNumbers": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "countryDialCode": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "id": {
+                                                    "bsonType": "string"
+                                                },
+                                                "telephoneNumber": {
+                                                    "bsonType": "string"
+                                                },
+                                                "telephoneType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "title": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "covers": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "coverId": {
+                                            "bsonType": "int"
+                                        },
+                                        "coverName": {
+                                            "bsonType": "string"
+                                        },
+                                        "coverType": {
+                                            "bsonType": "int"
+                                        },
+                                        "insuranceAmount": {
+                                            "bsonType": "string"
+                                        },
+                                        "insurance_Amount": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "amount": {
+                                                    "bsonType": "string"
+                                                },
+                                                "currency": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "premium": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "amount": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "currency": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "premiumAmount": {
+                                            "bsonType": "string"
+                                        },
+                                        "status": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "description": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "currency": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "endDate": {
+                                "bsonType": "string"
+                            },
+                            "externalPolicyNr": {
+                                "bsonType": "string"
+                            },
+                            "externalProposalNr": {
+                                "bsonType": "string"
+                            },
+                            "lineOfBusiness": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "description": {
+                                            "bsonType": "string"
+                                        },
+                                        "id": {
+                                            "bsonType": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "lob": {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            "payments": {
+                                "items": [
+                                    {
+                                        "properties": {
+                                            "AUD_SRC_SYS_ID": {
+                                                "bsonType": "string"
+                                            },
+                                            "AUD_SRC_SYS_NM": {
+                                                "bsonType": "string"
+                                            },
+                                            "MQ_ID": {
+                                                "bsonType": "string"
+                                            },
+                                            "_id": {
+                                                "bsonType": "int"
+                                            },
+                                            "billingType": {
+                                                "bsonType": "string"
+                                            },
+                                            "collection": {
+                                                "bsonType": "array",
+                                                "items": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "billingType": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "collectionDate": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "collectionMethod": {
+                                                            "bsonType": "object",
+                                                            "properties": {
+                                                                "description": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "id": {
+                                                                    "bsonType": "int"
+                                                                }
+                                                            }
+                                                        },
+                                                        "dueDate": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "estimatedAmount": {
+                                                            "bsonType": "object",
+                                                            "properties": {
+                                                                "accountAmount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "amount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "currency": {
+                                                                    "bsonType": "object",
+                                                                    "properties": {
+                                                                        "description": {
+                                                                            "bsonType": "string"
+                                                                        },
+                                                                        "id": {
+                                                                            "bsonType": "int"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "graceDate": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "paymentTerms": {
+                                                            "bsonType": "string"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "collectionDate": {
+                                                "bsonType": "string"
+                                            },
+                                            "collectionMethod": {
+                                                "bsonType": "string"
+                                            },
+                                            "installmentDetails": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "basicPremiumAmount": {
+                                                        "bsonType": "array",
+                                                        "items": {
+                                                            "bsonType": "object",
+                                                            "properties": {
+                                                                "accountAmount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "amount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "amountRate": {
+                                                                    "bsonType": "int"
+                                                                },
+                                                                "coverDetails": {
+                                                                    "bsonType": "object",
+                                                                    "properties": {
+                                                                        "coverFrom": {
+                                                                            "bsonType": "string"
+                                                                        },
+                                                                        "coverId": {
+                                                                            "bsonType": "int"
+                                                                        },
+                                                                        "coverTo": {
+                                                                            "bsonType": "string"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "currency": {
+                                                                    "bsonType": "object",
+                                                                    "properties": {
+                                                                        "description": {
+                                                                            "bsonType": "string"
+                                                                        },
+                                                                        "id": {
+                                                                            "bsonType": "int"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "id": {
+                                                                    "bsonType": "int"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "taxAmount": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "amount": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "currency": {
+                                                                "bsonType": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "totalAmount": {
+                                                        "bsonType": "array",
+                                                        "items": {
+                                                            "bsonType": "object",
+                                                            "properties": {
+                                                                "accountAmount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "amount": {
+                                                                    "bsonType": "string"
+                                                                },
+                                                                "amountRate": {
+                                                                    "bsonType": "int"
+                                                                },
+                                                                "currency": {
+                                                                    "bsonType": "object",
+                                                                    "properties": {
+                                                                        "description": {
+                                                                            "bsonType": "string"
+                                                                        },
+                                                                        "id": {
+                                                                            "bsonType": "int"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "installmentFee": {
+                                                "bsonType": "object",
+                                                "properties": {
+                                                    "accountAmount": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "amount": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "currency": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        }
+                                                    },
+                                                    "installmentId": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "installmentNumber": {
+                                                        "bsonType": "int"
+                                                    },
+                                                    "installmentStatus": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        }
+                                                    },
+                                                    "installmentType": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        }
+                                                    },
+                                                    "originalDueDate": {
+                                                        "bsonType": "string"
+                                                    },
+                                                    "paymentTerms": {
+                                                        "bsonType": "object",
+                                                        "properties": {
+                                                            "description": {
+                                                                "bsonType": "string"
+                                                            },
+                                                            "id": {
+                                                                "bsonType": "int"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "lastAmountpaidDate": {
+                                                "bsonType": "string"
+                                            },
+                                            "lastPaidAmount": {
+                                                "bsonType": "string"
+                                            },
+                                            "lastPaymentMethod": {
+                                                "bsonType": "string"
+                                            },
+                                            "nextPremiumAmount": {
+                                                "bsonType": "string"
+                                            },
+                                            "nextPremiumDueDate": {
+                                                "bsonType": "string"
+                                            },
+                                            "paidAmount": {
+                                                "bsonType": "string"
+                                            },
+                                            "paymentTerms": {
+                                                "bsonType": "string"
+                                            },
+                                            "policyHeaderId": {
+                                                "bsonType": "int"
+                                            },
+                                            "policyNumber": {
+                                                "bsonType": "string"
+                                            },
+                                            "premiumOverdueAmount": {
+                                                "bsonType": "string"
+                                            },
+                                            "totalInstallmentAmount1": {
+                                                "bsonType": "string"
+                                            },
+                                            "yearlyPremium": {
+                                                "bsonType": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ],
+                                "type": "array"
+                            },
+                            "policyHeaderId": {
+                                "bsonType": "string"
+                            },
+                            "policyHeaderNumber": {
+                                "bsonType": "int"
+                            },
+                            "policyHolder": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "addresses": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "addressType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "city": {
+                                                    "bsonType": "string"
+                                                },
+                                                "country": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "desc": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "house": {
+                                                    "bsonType": "string"
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                },
+                                                "postalCode": {
+                                                    "bsonType": "string"
+                                                },
+                                                "street": {
+                                                    "bsonType": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "birthCountry": {
+                                        "bsonType": "object",
+                                        "properties": {}
+                                    },
+                                    "contactId": {
+                                        "bsonType": "string"
+                                    },
+                                    "contactNumber": {
+                                        "bsonType": "string"
+                                    },
+                                    "dateOfBirth": {
+                                        "bsonType": "string"
+                                    },
+                                    "education": {
+                                        "bsonType": "object",
+                                        "properties": {}
+                                    },
+                                    "emails": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "bsonType": "string"
+                                                },
+                                                "emailType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "firstName": {
+                                        "bsonType": "string"
+                                    },
+                                    "gender": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "lastName": {
+                                        "bsonType": "string"
+                                    },
+                                    "nationality": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "policyHolderName": {
+                                        "bsonType": "string"
+                                    },
+                                    "profession": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    },
+                                    "telephoneNumbers": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "countryDialCode": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                },
+                                                "id": {
+                                                    "bsonType": "int"
+                                                },
+                                                "telephoneNumber": {
+                                                    "bsonType": "string"
+                                                },
+                                                "telephonePrefix": {
+                                                    "bsonType": "string"
+                                                },
+                                                "telephoneType": {
+                                                    "bsonType": "object",
+                                                    "properties": {
+                                                        "description": {
+                                                            "bsonType": "string"
+                                                        },
+                                                        "id": {
+                                                            "bsonType": "int"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "title": {
+                                        "bsonType": "object",
+                                        "properties": {
+                                            "description": {
+                                                "bsonType": "string"
+                                            },
+                                            "id": {
+                                                "bsonType": "int"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "policyId": {
+                                "bsonType": "string"
+                            },
+                            "policyNumber": {
+                                "bsonType": "string"
+                            },
+                            "policyVersion": {
+                                "bsonType": "int"
+                            },
+                            "premium_amount": {
+                                "bsonType": "string"
+                            },
+                            "product": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "readyForRenewal": {
+                                "bsonType": "bool"
+                            },
+                            "risk": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "home": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "address": {
+                                                    "bsonType": "string"
+                                                },
+                                                "endDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "startDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "yearlyPremium": {
+                                                    "bsonType": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "motor": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "address": {
+                                                    "bsonType": "string"
+                                                },
+                                                "driver": {
+                                                    "bsonType": "string"
+                                                },
+                                                "endDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "licensePlate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "made": {
+                                                    "bsonType": "string"
+                                                },
+                                                "model": {
+                                                    "bsonType": "string"
+                                                },
+                                                "startDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "yearlyPremium": {
+                                                    "bsonType": "string"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "travel": {
+                                        "bsonType": "array",
+                                        "items": {
+                                            "bsonType": "object",
+                                            "properties": {
+                                                "address": {
+                                                    "bsonType": "string"
+                                                },
+                                                "duration": {
+                                                    "bsonType": "string"
+                                                },
+                                                "endDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "startDate": {
+                                                    "bsonType": "string"
+                                                },
+                                                "where": {
+                                                    "bsonType": "string"
+                                                },
+                                                "yearlyPremium": {
+                                                    "bsonType": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "riskCount": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "noOfHome": {
+                                        "bsonType": "int"
+                                    },
+                                    "noOfMotor": {
+                                        "bsonType": "int"
+                                    },
+                                    "noOfTravel": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "startDate": {
+                                "bsonType": "string"
+                            },
+                            "status": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "policyHolder": {
+                        "bsonType": "object",
+                        "properties": {
+                            "claimContactRole": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "description": {
+                                        "bsonType": "string"
+                                    },
+                                    "id": {
+                                        "bsonType": "int"
+                                    }
+                                }
+                            },
+                            "contactId": {
+                                "bsonType": "string"
+                            },
+                            "insuredName": {
+                                "bsonType": "string"
+                            },
+                            "policyHolderName": {
+                                "bsonType": "string"
+                            }
+                        }
+                    },
+                    "policyList": {
+                        "bsonType": "object",
+                        "properties": {
+                            "description": {
+                                "bsonType": "bool"
+                            },
+                            "id": {
+                                "bsonType": "string"
+                            }
+                        }
+                    },
+                    "productName": {
+                        "bsonType": "string"
+                    },
+                    "timeline": {
+                        "items": {
+                            "properties": {
+                                "agendaGroupType": {
+                                    "type": "string"
+                                },
+                                "agendaStatusDate": {
+                                    "type": "string"
+                                },
+                                "agendaStatusReason": {
+                                    "type": "string"
+                                },
+                                "dueDate": {
+                                    "type": "string"
+                                },
+                                "remarks": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "totalFileCount": {
+                        "bsonType": "int"
+                    },
+                    "uploadedFileCount": {
+                        "bsonType": "int"
+                    }
+                },
+                "type": "object"
+            }
+        ],
+        "title": "claimSearchOutput",
+        "type": "array"
+    },
+    "payload_type_format": "custom"
+}

@@ -1,0 +1,140 @@
+{
+    "field_name": "Customer360_Overview",
+    "function_name": "Customer360_Overview",
+    "input_type": {
+        "bsonType": "object",
+        "properties": {
+            "agentId": {
+                "bsonType": "string"
+            },
+            "contactId": {
+                "bsonType": "string"
+            },
+            "contactNumber": {
+                "bsonType": "string"
+            }
+        },
+        "title": "Customer360_Overview_input"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": {
+        "items": [
+            {
+                "properties": {
+                    "account": {
+                        "bsonType": "object",
+                        "properties": {
+                            "activeClaims": {
+                                "bsonType": "string"
+                            },
+                            "toatalClaimedAmount": {
+                                "bsonType": "string"
+                            },
+                            "totalPolicyCount": {
+                                "bsonType": "string"
+                            },
+                            "totalPremium": {
+                                "bsonType": "string"
+                            }
+                        }
+                    },
+                    "contact": {
+                        "bsonType": "object",
+                        "properties": {
+                            "activeClaims": {
+                                "bsonType": "string"
+                            },
+                            "birthCountry": {
+                                "bsonType": "string"
+                            },
+                            "contactAddress": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "city": {
+                                        "bsonType": "string"
+                                    },
+                                    "house": {
+                                        "bsonType": "string"
+                                    },
+                                    "postalCode": {
+                                        "bsonType": "string"
+                                    },
+                                    "state": {
+                                        "bsonType": "string"
+                                    },
+                                    "street": {
+                                        "bsonType": "string"
+                                    }
+                                }
+                            },
+                            "contactId": {
+                                "bsonType": "string"
+                            },
+                            "contactName": {
+                                "bsonType": "string"
+                            },
+                            "contactNumber": {
+                                "bsonType": "string"
+                            },
+                            "contactStatus": {
+                                "bsonType": "string"
+                            },
+                            "dateOfBirth": {
+                                "bsonType": "string"
+                            },
+                            "email": {
+                                "bsonType": "string"
+                            },
+                            "firstName": {
+                                "bsonType": "string"
+                            },
+                            "gender": {
+                                "bsonType": "string"
+                            },
+                            "language": {
+                                "bsonType": "string"
+                            },
+                            "lastName": {
+                                "bsonType": "string"
+                            },
+                            "maritalStatus": {
+                                "bsonType": "string"
+                            },
+                            "middleName": {
+                                "bsonType": "string"
+                            },
+                            "nationality": {
+                                "bsonType": "string"
+                            },
+                            "numberOfFamilyMembers": {
+                                "bsonType": "string"
+                            },
+                            "telephoneNumber": {
+                                "bsonType": "string"
+                            },
+                            "title": {
+                                "bsonType": "string"
+                            }
+                        }
+                    },
+                    "insights": {
+                        "bsonType": "object",
+                        "properties": {
+                            "nextBestProduct": {
+                                "bsonType": "string"
+                            },
+                            "probabilitySaleNextBestProduct": {
+                                "bsonType": "string"
+                            }
+                        }
+                    }
+                },
+                "type": "object"
+            }
+        ],
+        "title": "Customer360_Overview_output",
+        "type": "array"
+    },
+    "payload_type_format": "custom"
+}

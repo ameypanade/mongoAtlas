@@ -1,0 +1,20 @@
+{
+    "field_name": "suggestions_V2",
+    "function_name": "suggestion_V2",
+    "input_type": {
+        "bsonType": "object",
+        "properties": {
+            "agentId": {
+                "bsonType": "string"
+            },
+            "inputString": {
+                "bsonType": "string"
+            }
+        },
+        "title": "suggestion_V2Input"
+    },
+    "input_type_format": "custom",
+    "on_type": "Query",
+    "payload_type": "string",
+    "payload_type_format": "scalar-list"
+}
