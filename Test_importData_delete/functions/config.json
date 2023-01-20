@@ -58,5 +58,10 @@
         "name": "payments",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "testCustmDash",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
