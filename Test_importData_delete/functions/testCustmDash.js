@@ -1,7 +1,7 @@
 
 exports = async function(input) {
   const request = context.services.get('mongodb-atlas').db('Digital').collection('cust360');
-  
+ //this is testing comment
   const key=Object.keys(input);
   var value=input[key[0]];
   console.log(key);
