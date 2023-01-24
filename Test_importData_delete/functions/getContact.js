@@ -4,7 +4,7 @@ exports = async function({ query, headers, body}, response) {
     const collectionContact = context.services.get('mongodb-atlas').db('Digital').collection('contact');
     
     
-    return await collectionContact.findOne({"contactId":contactId}).toArray()
+    return await collectionContact.findOne({"contactId":contactId})
       .then(data => {
         return data;
   });
