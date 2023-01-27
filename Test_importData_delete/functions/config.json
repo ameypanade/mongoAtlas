@@ -1,21 +1,11 @@
 [
     {
-        "name": "customerDashboard",
+        "name": "getContact",
         "private": false,
         "disable_arg_logs": true
     },
     {
-        "name": "suggestion_V2",
-        "private": false,
-        "disable_arg_logs": true
-    },
-    {
-        "name": "search_V2",
-        "private": false,
-        "disable_arg_logs": true
-    },
-    {
-        "name": "suggestion",
+        "name": "customer360",
         "private": false,
         "disable_arg_logs": true
     },
@@ -25,17 +15,32 @@
         "disable_arg_logs": true
     },
     {
-        "name": "payments",
-        "private": false,
-        "disable_arg_logs": true
-    },
-    {
-        "name": "search",
+        "name": "search_V2",
         "private": false,
         "disable_arg_logs": true
     },
     {
         "name": "claimSearch",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "suggestion",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "customerDashboard",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "policySearchCustomerId",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "payments",
         "private": false,
         "disable_arg_logs": true
     },
@@ -50,22 +55,12 @@
         "disable_arg_logs": true
     },
     {
-        "name": "customer360",
+        "name": "search",
         "private": false,
         "disable_arg_logs": true
     },
     {
-        "name": "policySearchCustomerId",
-        "private": false,
-        "disable_arg_logs": true
-    },
-    {
-        "name": "getContact",
-        "private": false,
-        "disable_arg_logs": true
-    },
-    {
-        "name": "testCustfunct",
+        "name": "suggestion_V2",
         "private": false,
         "disable_arg_logs": true
     }
