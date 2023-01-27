@@ -63,5 +63,10 @@
         "name": "suggestion_V2",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "post",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
